@@ -9,12 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <!-- Preloader -->
   <div class="preloader"><div class="preloader-logo">AYN100</div></div>
-
-  <!-- Custom Cursor -->
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
 
   <!-- Navigation -->
   <nav class="nav" id="mainNav">
@@ -24,33 +19,26 @@
       <a href="about.html">Our Story</a>
       <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
-      <a href="contact.html" class="nav-cta">Connect</a>
+      <a href="contact.html">Connect</a>
     </div>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
-
-  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">Our Story</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Connect</a>
+    <a href="index.html">Home</a><a href="about.html">Our Story</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Connect</a>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero Section — Split Layout -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="images/hero-main.png" alt="AYN100 Premium Furniture Showroom">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-tag">Premium Furniture Trading LLC</p>
-      <h1 class="hero-title">Crafting <em>Timeless</em> Elegance for Your Space</h1>
-      <p class="hero-subtitle">Where imagination meets expertise — bespoke furniture solutions that reflect your personality and lifestyle across UAE & India</p>
-      <a href="services.html" class="hero-btn"><span>Explore Our World</span></a>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-tag">Furniture Trading LLC</p>
+        <h1 class="hero-title">BESPOKE<br>FURNITURE<br>AND <em>MORE</em></h1>
+        <p class="hero-subtitle">Premium quality customized furniture for hotels, restaurants, commercial and residential projects across UAE & India</p>
+        <a href="about.html" class="hero-btn"><span>Dive Into Our Story</span></a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-main.png" alt="AYN100 Premium Furniture Showroom">
+      </div>
     </div>
     <div class="hero-scroll">
       <span>Scroll</span>
@@ -66,11 +54,11 @@
           <img src="images/about-craft.png" alt="AYN100 Craftsmanship">
         </div>
         <div class="about-text reveal-right">
-          <p class="section-tag">Our Legacy</p>
-          <h2 class="section-title">The AYN100 Story</h2>
+          <p class="section-tag">More Than A Decade</p>
+          <h2 class="section-title">From Dubai<br>To You</h2>
           <div class="section-divider"></div>
           <p class="section-subtitle">AYN100 Furniture Trading LLC is one of the leading furniture companies in UAE & India. We provide the best quality products and services, growing our offerings daily so that our customers have the finest experience.</p>
-          <p class="section-subtitle" style="margin-top: 20px;">Select and procure any furniture finish products under a single entity. Receive constant and dependable deliveries all across UAE — creating an experience that is pleasurable while delivering peace of mind every time.</p>
+          <p class="section-subtitle" style="margin-top: 15px;">Select and procure any furniture finish products under a single entity. Receive constant and dependable deliveries all across UAE — creating an experience that is pleasurable while delivering peace of mind every time.</p>
           <div class="about-stats">
             <div>
               <div class="stat-number" data-count="15" data-suffix="+">0</div>
@@ -90,14 +78,18 @@
     </div>
   </section>
 
+  <!-- Full Width Image -->
+  <div class="full-image-section">
+    <img src="images/project-hotel.png" alt="AYN100 Hotel Project">
+  </div>
+
   <!-- Services Section -->
-  <section class="section" id="services" style="background: var(--bg-secondary);">
+  <section class="section" id="services" style="background: var(--bg-alt);">
     <div class="container">
-      <div style="text-align: center;" class="reveal">
+      <div class="reveal">
         <p class="section-tag">What We Offer</p>
         <h2 class="section-title">Our Services</h2>
-        <div class="section-divider" style="margin: 25px auto;"></div>
-        <p class="section-subtitle" style="margin: 0 auto;">From concept to completion — comprehensive furniture solutions tailored to your vision</p>
+        <div class="section-divider"></div>
       </div>
       <div class="services-grid">
         <div class="service-card reveal">
@@ -118,7 +110,7 @@
         <div class="service-card reveal">
           <div class="service-icon"><i class="fas fa-scroll"></i></div>
           <h3>Premium Fabrics</h3>
-          <p>An extensive library of the finest fabrics sourced from around the world for your selection.</p>
+          <p>An extensive library of the finest fabrics sourced from around the world.</p>
         </div>
         <div class="service-card reveal">
           <div class="service-icon"><i class="fas fa-gem"></i></div>
@@ -128,17 +120,17 @@
         <div class="service-card reveal">
           <div class="service-icon"><i class="fas fa-tools"></i></div>
           <h3>Re-Upholstery</h3>
-          <p>Breathe new life into beloved furniture with expert re-upholstery and fabric restoration.</p>
+          <p>Breathe new life into beloved furniture with expert fabric restoration.</p>
         </div>
         <div class="service-card reveal">
           <div class="service-icon"><i class="fas fa-tasks"></i></div>
           <h3>Project Management</h3>
-          <p>End-to-end project coordination ensuring timely delivery and impeccable quality control.</p>
+          <p>End-to-end project coordination ensuring timely delivery and quality control.</p>
         </div>
         <div class="service-card reveal">
           <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
           <h3>Furniture Design</h3>
-          <p>Innovative design consultation that transforms creative concepts into functional masterpieces.</p>
+          <p>Innovative design that transforms creative concepts into functional masterpieces.</p>
         </div>
       </div>
     </div>
@@ -155,47 +147,41 @@
   <!-- Projects Preview -->
   <section class="section" id="projects-preview">
     <div class="container">
-      <div style="text-align: center;" class="reveal">
+      <div class="reveal">
         <p class="section-tag">Portfolio</p>
         <h2 class="section-title">Featured Projects</h2>
-        <div class="section-divider" style="margin: 25px auto;"></div>
-        <p class="section-subtitle" style="margin: 0 auto 60px;">A glimpse into our world of bespoke furniture excellence</p>
+        <div class="section-divider"></div>
       </div>
       <div class="projects-grid">
         <div class="project-card reveal">
           <img src="images/project-hotel.png" alt="Luxury Hotel Project">
-          <div class="project-overlay">
-            <h3>Grand Hyatt Interiors</h3>
-            <p>Hotel &bull; Dubai</p>
-          </div>
+          <div class="project-overlay"><h3>Grand Hyatt Interiors</h3><p>Hotel &bull; Dubai</p></div>
         </div>
         <div class="project-card reveal">
           <img src="images/project-residential.png" alt="Premium Residential Project">
-          <div class="project-overlay">
-            <h3>Palm Jumeirah Villa</h3>
-            <p>Residential &bull; Dubai</p>
-          </div>
+          <div class="project-overlay"><h3>Palm Jumeirah Villa</h3><p>Residential &bull; Dubai</p></div>
         </div>
         <div class="project-card reveal">
           <img src="images/hero-main.png" alt="Commercial Lounge Project">
-          <div class="project-overlay">
-            <h3>Executive Business Lounge</h3>
-            <p>Commercial &bull; Abu Dhabi</p>
-          </div>
+          <div class="project-overlay"><h3>Executive Business Lounge</h3><p>Commercial &bull; Abu Dhabi</p></div>
+        </div>
+        <div class="project-card reveal">
+          <img src="images/about-craft.png" alt="Boutique Hotel">
+          <div class="project-overlay"><h3>Boutique Hotel Suites</h3><p>Hotel &bull; Sharjah</p></div>
         </div>
       </div>
-      <div style="text-align: center; margin-top: 50px;" class="reveal">
+      <div style="margin-top: 50px;" class="reveal">
         <a href="projects.html" class="hero-btn" style="opacity:1;animation:none;"><span>View All Projects</span></a>
       </div>
     </div>
   </section>
 
-  <!-- Personalized Furniture Section -->
+  <!-- Quote Section -->
   <section class="section testimonial-section">
     <div class="container">
       <div class="testimonial-content reveal">
         <p class="section-tag" style="text-align:center;">Personalized Experience</p>
-        <p class="testimonial-quote">"Find out what style appeals to you. Look at the visual attributes of each piece — shape, material, colour and texture. It's the prestigious AYN100 assurance that you can merge your imagination and expectations about your dream furniture with our expertise, and we bring you a smile."</p>
+        <p class="testimonial-quote">"It's the prestigious AYN100 assurance that you can merge your imagination and expectations about your dream furniture with our expertise, and we bring you a smile."</p>
         <p class="testimonial-author">— The AYN100 Promise</p>
       </div>
     </div>
@@ -203,16 +189,12 @@
 
   <!-- CTA Section -->
   <section class="cta-section">
-    <div class="hero-bg">
-      <img src="images/about-craft.png" alt="AYN100 Workshop">
-    </div>
-    <div class="hero-overlay"></div>
     <div class="container" style="position:relative; z-index:2;">
       <div class="reveal">
         <p class="section-tag" style="text-align:center;">Start Your Journey</p>
-        <h2 class="section-title" style="text-align:center;">Ready to Transform Your Space?</h2>
-        <div class="section-divider" style="margin: 25px auto;"></div>
-        <p class="section-subtitle" style="text-align:center; margin: 0 auto 40px;">Let us bring your vision to life with our expertise in premium furniture solutions</p>
+        <h2 class="section-title" style="text-align:center; max-width:700px; margin:0 auto 20px;">Ready to Transform Your Space?</h2>
+        <div class="section-divider" style="margin: 20px auto;"></div>
+        <p class="section-subtitle" style="text-align:center; margin: 0 auto 40px; color: rgba(255,255,255,0.6);">Let us bring your vision to life with our expertise in premium furniture solutions</p>
         <div style="text-align:center;">
           <a href="contact.html" class="hero-btn" style="opacity:1;animation:none;"><span>Get In Touch</span></a>
         </div>
@@ -262,9 +244,9 @@
       <div class="footer-bottom">
         <p>&copy; 2024 AYN100 Furniture Trading LLC. All rights reserved.</p>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/ayn100-furniture" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/ayn100-furniture" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
     </div>
