@@ -35,7 +35,11 @@ if (hamburger && mobileMenu) {
 function revealOnScroll() {
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
     const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight * 0.88) el.classList.add('active');
+    if (top < window.innerHeight * 0.88) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
   });
 }
 window.addEventListener('scroll', revealOnScroll);
