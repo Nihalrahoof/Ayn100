@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | AYN100 Furniture Trading LLC</title>
+  <title>Projects Portfolio | AYN Group</title>
   <meta name="description"
-    content="Explore AYN100's portfolio of premium furniture projects — hotels, restaurants, commercial spaces, and luxury residences across UAE & India.">
+    content="Explore the premium portfolio of AYN Group — Bespoke furniture fit-outs, luxury window draping, and sterile clinical laboratory installations.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
@@ -20,15 +20,15 @@
 
     .filter-btn {
       padding: 10px 28px;
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border);
       background: transparent;
-      color: var(--text-secondary);
+      color: var(--text-light);
       font-family: var(--font-body);
       font-size: .75rem;
       letter-spacing: 3px;
       text-transform: uppercase;
       cursor: pointer;
-      transition: all .4s var(--transition);
+      transition: all .4s var(--ease);
     }
 
     .filter-btn:hover,
@@ -66,32 +66,44 @@
 
 <body>
   <div class="preloader">
-    <div class="preloader-logo">AYN100</div>
+    <div class="preloader-logo">AYN</div>
   </div>
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
 
+  <!-- Navigation -->
   <nav class="nav" id="mainNav">
-    <a href="index.html" class="nav-logo">AYN<span>100</span></a>
+    <a href="index.html" class="nav-logo">AYN</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">Divisions <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px;"></i></a>
+        <div class="dropdown-content">
+          <a href="ayn100.html">AYN100 Furniture</a>
+          <a href="fabrics.html">AYN Fabrics</a>
+          <a href="fortis.html">AM Fortis Engg</a>
+        </div>
+      </div>
       <a href="about.html">Our Story</a>
-      <a href="services.html">Services</a>
       <a href="projects.html" class="active">Projects</a>
       <a href="contact.html" class="nav-cta">Connect</a>
     </div>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a><a href="about.html">Our Story</a><a href="services.html">Services</a><a
-      href="projects.html">Projects</a><a href="contact.html">Connect</a>
+    <a href="index.html">Home</a>
+    <a href="ayn100.html">AYN100 Furniture</a>
+    <a href="fabrics.html">AYN Fabrics</a>
+    <a href="fortis.html">AM Fortis Engg</a>
+    <a href="about.html">Our Story</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Connect</a>
   </div>
 
   <section class="page-header">
     <div class="parallax-bg" style="background-image: url('images/bg3.jpg');"></div>
+    <div class="hero-overlay-dark" style="background: rgba(10, 10, 10, 0.45);"></div>
     <div class="page-header-content">
-      <p class="section-tag" style="animation:fadeUp 1s .3s forwards;opacity:0;">Portfolio</p>
-      <h1 style="animation:fadeUp 1s .6s forwards;opacity:0;">Our Projects</h1>
+      <p class="section-tag" style="animation:fadeUp 1s .3s forwards;opacity:0; color:#fff;">Portfolio</p>
+      <h1 style="animation:fadeUp 1s .6s forwards;opacity:0; color:#fff;">Our Projects</h1>
     </div>
   </section>
 
@@ -99,82 +111,94 @@
     <div class="container">
       <div style="text-align:center;" class="reveal">
         <p class="section-tag">Our Work</p>
-        <h2 class="section-title">Premium Projects Across the Region</h2>
+        <h2 class="section-title">Turnkey Projects Across the Region</h2>
         <div class="section-divider" style="margin:25px auto;"></div>
-        <p class="section-subtitle" style="margin:0 auto;">From five-star hotels to private residences — every project
-          is a testament to our commitment to excellence</p>
+        <p class="section-subtitle" style="margin:0 auto;">From high-end residences to sterile diagnostic laboratories — every project is a testament to our engineering and design precision</p>
       </div>
 
       <div class="filter-bar reveal">
         <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="hotel">Hotels</button>
-        <button class="filter-btn" data-filter="restaurant">Restaurants</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="ayn100">AYN100 Furniture</button>
+        <button class="filter-btn" data-filter="fabrics">AYN Fabrics</button>
+        <button class="filter-btn" data-filter="fortis">AM Fortis Engg</button>
       </div>
 
       <div class="projects-page-grid">
-        <div class="project-card reveal" data-category="hotel">
+        <div class="project-card reveal" data-category="ayn100">
           <img src="images/project-hotel.png" alt="Grand Hyatt Dubai">
           <div class="project-overlay">
-            <h3>Grand Hyatt Interiors</h3>
-            <p>Hotel &bull; Dubai, UAE</p>
+            <h3>Grand Hyatt Suite Fit-out</h3>
+            <p>AYN100 &bull; Dubai, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="residential">
+        <div class="project-card reveal" data-category="fabrics">
           <img src="images/project-residential.png" alt="Palm Jumeirah Villa">
           <div class="project-overlay">
-            <h3>Palm Jumeirah Villa</h3>
-            <p>Residential &bull; Dubai, UAE</p>
+            <h3>Palm Jumeirah Custom Drapery</h3>
+            <p>AYN Fabrics &bull; Dubai, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="commercial">
+        <div class="project-card reveal" data-category="ayn100">
           <img src="images/hero-main.png" alt="Executive Business Lounge">
           <div class="project-overlay">
             <h3>Executive Business Lounge</h3>
-            <p>Commercial &bull; Abu Dhabi, UAE</p>
+            <p>AYN100 &bull; Abu Dhabi, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="hotel">
+        <div class="project-card reveal" data-category="fortis">
+          <img src="images/project-fortis.png" alt="Clinical Research Laboratory">
+          <div class="project-overlay">
+            <h3>Diagnostic Research Facility</h3>
+            <p>AM Fortis Engg &bull; Dubai, UAE</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="fabrics">
           <img src="images/about-craft.png" alt="Marriott Suites">
           <div class="project-overlay">
-            <h3>Marriott Premium Suites</h3>
-            <p>Hotel &bull; Sharjah, UAE</p>
+            <h3>Marriott Premium Suite Curtains</h3>
+            <p>AYN Fabrics &bull; Sharjah, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="restaurant">
+        <div class="project-card reveal" data-category="ayn100">
           <img src="images/project-residential.png" alt="La Maison Restaurant">
           <div class="project-overlay">
             <h3>La Maison Fine Dining</h3>
-            <p>Restaurant &bull; Dubai, UAE</p>
+            <p>AYN100 &bull; Dubai, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="residential">
+        <div class="project-card reveal" data-category="fortis">
+          <img src="images/project-fortis.png" alt="Surgical Cleanroom Stations">
+          <div class="project-overlay">
+            <h3>Cleanroom Sterile Installations</h3>
+            <p>AM Fortis Engg &bull; Abu Dhabi, UAE</p>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="ayn100">
           <img src="images/project-hotel.png" alt="Downtown Penthouse">
           <div class="project-overlay">
-            <h3>Downtown Penthouse</h3>
-            <p>Residential &bull; Dubai, UAE</p>
+            <h3>Downtown Luxury Penthouse</h3>
+            <p>AYN100 &bull; Dubai, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="commercial">
+        <div class="project-card reveal" data-category="ayn100">
           <img src="images/about-craft.png" alt="Corporate Office Fit-out">
           <div class="project-overlay">
             <h3>DIFC Corporate Office</h3>
-            <p>Commercial &bull; Dubai, UAE</p>
+            <p>AYN100 &bull; Dubai, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="restaurant">
+        <div class="project-card reveal" data-category="ayn100">
           <img src="images/hero-main.png" alt="Rooftop Lounge Bar">
           <div class="project-overlay">
             <h3>Skyline Rooftop Lounge</h3>
-            <p>Restaurant &bull; Abu Dhabi, UAE</p>
+            <p>AYN100 &bull; Abu Dhabi, UAE</p>
           </div>
         </div>
-        <div class="project-card reveal" data-category="hotel">
+        <div class="project-card reveal" data-category="fabrics">
           <img src="images/project-residential.png" alt="Boutique Hotel">
           <div class="project-overlay">
-            <h3>Al Seef Boutique Hotel</h3>
-            <p>Hotel &bull; Dubai, UAE</p>
+            <h3>Al Seef Boutique Soft Curation</h3>
+            <p>AYN Fabrics &bull; Dubai, UAE</p>
           </div>
         </div>
       </div>
@@ -187,19 +211,16 @@
       <div class="testimonial-content reveal">
         <p class="section-tag" style="text-align:center;">Client Words</p>
         <div class="testimonial-slide" style="transition:opacity .5s;">
-          <p class="testimonial-quote">"AYN100 delivered beyond our expectations. The attention to detail, the quality
-            of craftsmanship, and the seamless project management made our hotel renovation an absolute success."</p>
+          <p class="testimonial-quote">"AYN Group delivered beyond our expectations. The attention to detail in the custom furniture and the seamless project coordination made our hotel renovation an absolute success."</p>
           <p class="testimonial-author">— Senior Project Director, Hospitality Group</p>
         </div>
         <div class="testimonial-slide" style="transition:opacity .5s; display:none;">
-          <p class="testimonial-quote">"From fabric selection to final installation, the AYN100 team was professional,
-            creative, and incredibly responsive. Our villa has been transformed into a masterpiece."</p>
+          <p class="testimonial-quote">"From fabric selection to final installation, the AYN Fabrics team was professional, creative, and incredibly responsive. Our villa's window styling is a masterpiece."</p>
           <p class="testimonial-author">— Private Residential Client, Palm Jumeirah</p>
         </div>
         <div class="testimonial-slide" style="transition:opacity .5s; display:none;">
-          <p class="testimonial-quote">"We chose AYN100 for our restaurant fit-out and couldn't be happier. The bespoke
-            furniture perfectly captures the ambiance we envisioned."</p>
-          <p class="testimonial-author">— Restaurant Owner, Dubai Marina</p>
+          <p class="testimonial-quote">"We chose AM Fortis Engg for our new diagnostic clinic lab stations and couldn't be happier. The chemical-resistant surfaces and modular benches are clean, durable, and highly functional."</p>
+          <p class="testimonial-author">— Laboratory Director, Health Medical Center</p>
         </div>
       </div>
     </div>
@@ -215,53 +236,61 @@
         <h2 class="section-title" style="text-align:center;">Let's Create Something Remarkable</h2>
         <div class="section-divider" style="margin:25px auto;"></div>
         <div style="text-align:center;margin-top:30px;">
-          <a href="contact.html" class="hero-btn" style="opacity:1;animation:none;"><span>Discuss Your
-              Project</span></a>
+          <a href="contact.html" class="hero-btn" style="opacity:1;animation:none;"><span>Discuss Your Project</span></a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="nav-logo">AYN<span>100</span></a>
-          <p>Leading provider of customized premium furniture, curtains, blinds, decorative metal and re-upholstery
-            services across UAE & India.</p>
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">AYN</a>
+          <p>
+            AYN is a multidisciplinary design, fabric, and engineering collective. Through our three specialized subsidiaries—AYN100, AYN FABRICS, and AM FORTIS ENGG—we provide comprehensive, turnkey solutions ranging from custom interior styling to clinical laboratory engineering. Driven by innovation and backed by parental brand equity, we engineer spaces that inspire.
+          </p>
         </div>
         <div>
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="ayn100.html">AYN100 Furniture</a></li>
+            <li><a href="fabrics.html">AYN Fabrics</a></li>
+            <li><a href="fortis.html">AM Fortis Engg</a></li>
             <li><a href="about.html">Our Story</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Divisions</h4>
           <ul>
-            <li><a href="services.html">Customized Furniture</a></li>
-            <li><a href="services.html">Curtains & Blinds</a></li>
-            <li><a href="services.html">Decorative Metal</a></li>
-            <li><a href="services.html">Re-Upholstery</a></li>
-            <li><a href="services.html">Furniture Design</a></li>
+            <li><a href="ayn100.html">AYN100 Furniture</a></li>
+            <li><a href="fabrics.html">AYN Fabrics</a></li>
+            <li><a href="fortis.html">AM Fortis Engg</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+97557856132">+9755 785 6132</a></li>
-            <li><a href="mailto:sales@ayn100.com">sales@ayn100.com</a></li>
-            <li>Sheikh Zayed Road, Dubai</li>
+            <li><a href="tel:+971589034546">+971 58 903 4546</a></li>
+            <li><a href="tel:+971527737468">+971 52 773 7468</a></li>
+            <li><a href="mailto:Sales@anmgrp.com">Sales@anmgrp.com</a></li>
+            <li>Sadaa Albihaar Business Center</li>
+            <li>2nd Floor, Office 56</li>
+            <li>City Tower 2, Sheikh Zayed Road, Dubai</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 AYN100 Furniture Trading LLC. All rights reserved.</p>
-        <div class="social-links"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i
-              class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+        <p>&copy; 2026 AYN Group. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/anm-furniture" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
       </div>
     </div>
   </footer>

@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | AYN100 Furniture Trading LLC</title>
+  <title>Connect With Us | AYN Group</title>
   <meta name="description"
-    content="Get in touch with AYN100 Furniture Trading LLC — premium furniture solutions in Dubai, UAE. Visit our showroom or reach us for a personalized consultation.">
+    content="Get in touch with AYN Group collective. Direct inquiries to our specialized divisions: AYN100 Furniture, AYN Fabrics, or AM Fortis Engineering.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
@@ -14,7 +14,7 @@
       width: 100%;
       height: 400px;
       margin-top: 60px;
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border);
       overflow: hidden;
     }
 
@@ -39,13 +39,14 @@
 
     .contact-card {
       padding: 40px 30px;
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border);
       text-align: center;
-      transition: all .5s var(--transition);
+      transition: all .5s var(--ease);
+      background: var(--bg);
     }
 
     .contact-card:hover {
-      border-color: var(--border-gold);
+      border-color: var(--gold-light);
       transform: translateY(-5px);
     }
 
@@ -65,7 +66,7 @@
     .contact-card p,
     .contact-card a {
       font-size: .9rem;
-      color: var(--text-secondary);
+      color: var(--text-light);
       line-height: 1.7;
     }
 
@@ -89,32 +90,44 @@
 
 <body>
   <div class="preloader">
-    <div class="preloader-logo">AYN100</div>
+    <div class="preloader-logo">AYN</div>
   </div>
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
 
+  <!-- Navigation -->
   <nav class="nav" id="mainNav">
-    <a href="index.html" class="nav-logo">AYN<span>100</span></a>
+    <a href="index.html" class="nav-logo">AYN</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">Divisions <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px;"></i></a>
+        <div class="dropdown-content">
+          <a href="ayn100.html">AYN100 Furniture</a>
+          <a href="fabrics.html">AYN Fabrics</a>
+          <a href="fortis.html">AM Fortis Engg</a>
+        </div>
+      </div>
       <a href="about.html">Our Story</a>
-      <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html" class="nav-cta active">Connect</a>
     </div>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a><a href="about.html">Our Story</a><a href="services.html">Services</a><a
-      href="projects.html">Projects</a><a href="contact.html">Connect</a>
+    <a href="index.html">Home</a>
+    <a href="ayn100.html">AYN100 Furniture</a>
+    <a href="fabrics.html">AYN Fabrics</a>
+    <a href="fortis.html">AM Fortis Engg</a>
+    <a href="about.html">Our Story</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Connect</a>
   </div>
 
   <section class="page-header">
     <div class="parallax-bg" style="background-image: url('images/bg3.jpg');"></div>
+    <div class="hero-overlay-dark" style="background: rgba(10, 10, 10, 0.45);"></div>
     <div class="page-header-content">
-      <p class="section-tag" style="animation:fadeUp 1s .3s forwards;opacity:0;">Get In Touch</p>
-      <h1 style="animation:fadeUp 1s .6s forwards;opacity:0;">Connect With Us</h1>
+      <p class="section-tag" style="animation:fadeUp 1s .3s forwards;opacity:0; color:#fff;">Get In Touch</p>
+      <h1 style="animation:fadeUp 1s .6s forwards;opacity:0; color:#fff;">Connect With Us</h1>
     </div>
   </section>
 
@@ -130,20 +143,20 @@
         <div class="contact-card reveal">
           <i class="fas fa-phone"></i>
           <h3>Call Us</h3>
-          <p><a href="tel:+97557856132">+9755 785 6132</a></p>
-          <p style="margin-top:5px;font-size:.8rem;color:var(--text-muted);">Mon - Sat: 9AM - 6PM</p>
+          <p><a href="tel:+971589034546">+971 58 903 4546</a></p>
+          <p><a href="tel:+971527737468">+971 52 773 7468</a></p>
         </div>
         <div class="contact-card reveal">
           <i class="fas fa-envelope"></i>
           <h3>Email Us</h3>
-          <p><a href="mailto:sales@ayn100.com">sales@ayn100.com</a></p>
+          <p><a href="mailto:Sales@anmgrp.com">Sales@anmgrp.com</a></p>
           <p style="margin-top:5px;font-size:.8rem;color:var(--text-muted);">We respond within 24 hours</p>
         </div>
         <div class="contact-card reveal">
           <i class="fab fa-linkedin-in"></i>
           <h3>Follow Us</h3>
-          <p><a href="https://www.linkedin.com/in/ayn100-furniture" target="_blank">LinkedIn</a></p>
-          <p><a href="https://www.ayn100.ae" target="_blank">www.ayn100.ae</a></p>
+          <p><a href="https://www.linkedin.com/in/anm-furniture" target="_blank">LinkedIn</a></p>
+          <p><a href="index.html">www.ayngroup.com</a></p>
         </div>
       </div>
     </div>
@@ -157,23 +170,31 @@
           <p class="section-tag">Send a Message</p>
           <h2 class="section-title">Let's Discuss Your Project</h2>
           <div class="section-divider"></div>
-          <p class="section-subtitle" style="max-width:100%;margin-bottom:40px;">Whether you have a specific project in
-            mind or simply want to explore possibilities, we'd love to hear from you. Fill out the form and our team
-            will get back to you within 24 hours.</p>
+          <p class="section-subtitle" style="max-width:100%;margin-bottom:40px;">Whether you have a specific custom furniture design, soft curation requirements, or cleanroom laboratory specs, choose the corresponding division and fill out the details. Our specialist engineers and designers will reply within 24 hours.</p>
 
           <div class="contact-info-item">
-            <h3>Our Specialties</h3>
-            <p>Customized Furniture • Ready Made Furniture • Curtains & Blinds • Premium Fabrics • Decorative Metal •
-              Re-Upholstery • Project Management • Furniture Design</p>
+            <h3>AYN Subsidiaries</h3>
+            <p><strong>AYN100 Furniture:</strong> High-end luxury residential, office fit-outs and custom hotel furniture.</p>
+            <p style="margin-top:5px;"><strong>AYN Fabrics:</strong> Custom window drapery, upholstery sourcing and performance textiles.</p>
+            <p style="margin-top:5px;"><strong>AM Fortis Engg:</strong> Chemical-resistant benches, modular lab cabinets and sterile fixtures.</p>
           </div>
           <div class="contact-info-item">
-            <h3>Serving</h3>
-            <p>Hotels • Restaurants • Commercial Spaces • Residential Projects across UAE & India</p>
+            <h3>Serving Regions</h3>
+            <p>Hotels • Hospitals • Corporate Offices • Laboratories • Luxury Residences across UAE & India</p>
           </div>
         </div>
 
         <div class="reveal-right">
           <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <select id="division-select" name="division" style="width: 100%; padding: 16px 0; border: none; border-bottom: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 0.9rem; outline: none;" required>
+                <option value="" disabled selected style="background: var(--bg-dark); color: #fff;">Select Division Inquiry</option>
+                <option value="general" style="background: var(--bg-dark); color: #fff;">General Corporate Inquiries</option>
+                <option value="ayn100" style="background: var(--bg-dark); color: #fff;">AYN100 Furniture (Custom Furniture)</option>
+                <option value="fabrics" style="background: var(--bg-dark); color: #fff;">AYN Fabrics (Textiles & Curtains)</option>
+                <option value="fortis" style="background: var(--bg-dark); color: #fff;">AM Fortis Engg (Laboratory Furniture)</option>
+              </select>
+            </div>
             <div class="form-group">
               <input type="text" id="name" name="name" placeholder=" " required>
               <label for="name">Your Name</label>
@@ -203,55 +224,78 @@
       <div class="map-container reveal">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2!2d55.27!3d25.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEyJzAwLjAiTiA1NcKwMTYnMTIuMCJF!5e0!3m2!1sen!2sae!4v1234567890"
-          allowfullscreen="" loading="lazy" title="AYN100 Office Location"></iframe>
+          allowfullscreen="" loading="lazy" title="AYN Office Location"></iframe>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="nav-logo">AYN<span>100</span></a>
-          <p>Leading provider of customized premium furniture, curtains, blinds, decorative metal and re-upholstery
-            services across UAE & India.</p>
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">AYN</a>
+          <p>
+            AYN is a multidisciplinary design, fabric, and engineering collective. Through our three specialized subsidiaries—AYN100, AYN FABRICS, and AM FORTIS ENGG—we provide comprehensive, turnkey solutions ranging from custom interior styling to clinical laboratory engineering. Driven by innovation and backed by parental brand equity, we engineer spaces that inspire.
+          </p>
         </div>
         <div>
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="ayn100.html">AYN100 Furniture</a></li>
+            <li><a href="fabrics.html">AYN Fabrics</a></li>
+            <li><a href="fortis.html">AM Fortis Engg</a></li>
             <li><a href="about.html">Our Story</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Divisions</h4>
           <ul>
-            <li><a href="services.html">Customized Furniture</a></li>
-            <li><a href="services.html">Curtains & Blinds</a></li>
-            <li><a href="services.html">Decorative Metal</a></li>
-            <li><a href="services.html">Re-Upholstery</a></li>
-            <li><a href="services.html">Furniture Design</a></li>
+            <li><a href="ayn100.html">AYN100 Furniture</a></li>
+            <li><a href="fabrics.html">AYN Fabrics</a></li>
+            <li><a href="fortis.html">AM Fortis Engg</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+97557856132">+9755 785 6132</a></li>
-            <li><a href="mailto:sales@ayn100.com">sales@ayn100.com</a></li>
-            <li>Sheikh Zayed Road, Dubai</li>
+            <li><a href="tel:+971589034546">+971 58 903 4546</a></li>
+            <li><a href="tel:+971527737468">+971 52 773 7468</a></li>
+            <li><a href="mailto:Sales@anmgrp.com">Sales@anmgrp.com</a></li>
+            <li>Sadaa Albihaar Business Center</li>
+            <li>2nd Floor, Office 56</li>
+            <li>City Tower 2, Sheikh Zayed Road, Dubai</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 AYN100 Furniture Trading LLC. All rights reserved.</p>
-        <div class="social-links"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i
-              class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+        <p>&copy; 2026 AYN Group. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/anm-furniture" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
       </div>
     </div>
   </footer>
+  
   <script src="js/main.js"></script>
+  <script>
+    // Pre-select division dropdown based on URL query param
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const divisionParam = urlParams.get('division');
+      if (divisionParam) {
+        const selectEl = document.getElementById('division-select');
+        if (selectEl) {
+          selectEl.value = divisionParam;
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

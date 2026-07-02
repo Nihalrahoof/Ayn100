@@ -449,3 +449,487 @@ ul { list-style: none; }
   .timeline::before, .timeline-item::before { display: none; }
   .timeline-year { text-align: center; }
 }
+
+/* ─── DIVISION THEME OVERRIDES ─── */
+body.division-ayn100 {
+  --gold: #7a6640;
+  --gold-light: #9a8560;
+}
+body.division-fabrics {
+  --gold: #a67c52;
+  --gold-light: #c59b72;
+}
+body.division-fortis {
+  --gold: #2b5c73;
+  --gold-light: #407b97;
+}
+
+/* ─── DROPDOWN NAVIGATION ─── */
+.nav-dropdown {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-dropdown .dropdown-trigger {
+  cursor: pointer;
+}
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--bg-dark);
+  min-width: 220px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s var(--ease);
+  border: 1px solid rgba(255,255,255,0.08);
+  z-index: 1002;
+}
+.nav-dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.dropdown-content a {
+  color: rgba(255,255,255,0.7) !important;
+  padding: 15px 25px !important;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s;
+  height: auto !important;
+}
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+.dropdown-content a:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff !important;
+}
+.nav:not(.scrolled) .dropdown-content {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* ─── DIVISIONS SECTION ─── */
+.divisions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+.division-card {
+  position: relative;
+  height: 550px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s var(--ease);
+}
+.division-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26,22,16,0.1) 0%, rgba(26,22,16,0.9) 100%);
+  z-index: 1;
+  transition: opacity 0.5s var(--ease);
+}
+.division-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border-color: var(--gold-light);
+}
+.division-card:hover::before {
+  background: linear-gradient(180deg, rgba(26,22,16,0.05) 0%, rgba(26,22,16,0.95) 100%);
+}
+.division-card-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  transition: transform 0.5s var(--ease);
+}
+.division-badge {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 15px;
+}
+.division-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.division-headline {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.division-desc {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+.division-card:hover .division-desc {
+  height: 90px;
+  opacity: 1;
+}
+.division-offerings {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+.division-card:hover .division-offerings {
+  height: 110px;
+  opacity: 1;
+}
+.division-offerings li {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.85);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.division-offerings li i {
+  color: var(--gold-light);
+  font-size: 0.7rem;
+}
+.division-link {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1.5px solid var(--gold-light);
+  padding-bottom: 5px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+.division-link:hover {
+  color: var(--gold-light);
+  border-bottom-color: #fff;
+}
+.division-link i {
+  transition: transform 0.3s;
+}
+.division-link:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+  .divisions-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .division-card {
+    height: 500px;
+  }
+  .division-desc, .division-offerings {
+    height: auto !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ─── INTERACTIVE HERO (DIVISION SWITCHER) ─── */
+.hero-interactive {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+  background: #0a0a08;
+}
+
+/* Background layers — stacked, crossfade via opacity */
+.hero-bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+  transform: scale(1.05);
+}
+.hero-bg-layer.active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark overlay */
+.hero-interactive-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 8, 0.82) 0%,
+    rgba(10, 10, 8, 0.55) 50%,
+    rgba(10, 10, 8, 0.3) 100%
+  );
+  z-index: 1;
+  transition: background 0.8s ease;
+}
+
+/* Inner layout — flex between text and nav */
+.hero-interactive-inner {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* ── Left side: Text ── */
+.hero-text-side {
+  flex: 1;
+  position: relative;
+  min-height: 400px;
+}
+.hero-text-side .hero-tag {
+  color: var(--gold-light);
+  margin-bottom: 30px;
+}
+
+/* Text blocks — stacked absolutely, fade in/out */
+.hero-text-block {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.hero-text-block.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Mega headline */
+.hero-mega-title {
+  font-family: var(--font-heading);
+  font-size: clamp(3.2rem, 7.5vw, 7.5rem);
+  font-weight: 700;
+  line-height: 0.92;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.hero-mega-title em {
+  font-style: normal;
+  color: var(--gold-light);
+  transition: color 0.5s;
+}
+
+/* Subtitle below headline */
+.hero-interactive-sub {
+  font-family: var(--font-accent);
+  font-size: 1.15rem;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 480px;
+  line-height: 1.8;
+}
+
+/* ── Right side: Division navigation buttons ── */
+.hero-division-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 4;
+  flex-shrink: 0;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.8s forwards;
+}
+
+/* Individual division button */
+.hero-div-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 140px;
+  background: rgba(26, 22, 16, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+.hero-div-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.hero-div-btn:hover,
+.hero-div-btn.active {
+  border-color: var(--gold-light);
+  background: rgba(26, 22, 16, 0.95);
+  transform: translateX(-8px);
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.3);
+}
+.hero-div-btn:hover::before,
+.hero-div-btn.active::before {
+  opacity: 0.1;
+}
+
+/* Button text */
+.hero-div-btn-label {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 0.4s;
+}
+.hero-div-btn-sub {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 6px;
+  transition: color 0.4s;
+}
+.hero-div-btn:hover .hero-div-btn-sub,
+.hero-div-btn.active .hero-div-btn-sub {
+  color: var(--gold-light);
+}
+
+/* Active indicator line */
+.hero-div-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gold-light);
+  transform: scaleY(0);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-div-btn:hover::after,
+.hero-div-btn.active::after {
+  transform: scaleY(1);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .hero-interactive-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 40px 60px;
+    gap: 40px;
+  }
+  .hero-text-side {
+    min-height: 280px;
+  }
+  .hero-mega-title {
+    font-size: clamp(2.5rem, 10vw, 4.5rem);
+  }
+  .hero-division-nav {
+    flex-direction: row;
+    gap: 12px;
+  }
+  .hero-div-btn {
+    width: 140px;
+    height: 110px;
+  }
+  .hero-div-btn:hover,
+  .hero-div-btn.active {
+    transform: translateY(-5px) translateX(0);
+  }
+}
+@media (max-width: 768px) {
+  .hero-interactive {
+    min-height: auto;
+    height: auto;
+    padding: 120px 0 60px;
+  }
+  .hero-interactive-inner {
+    padding: 0 25px;
+  }
+  .hero-text-side {
+    min-height: 220px;
+  }
+  .hero-text-block {
+    position: relative;
+    top: auto;
+    display: none;
+  }
+  .hero-text-block.active {
+    display: block;
+  }
+  .hero-mega-title {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+  }
+  .hero-division-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-div-btn {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    gap: 12px;
+  }
+}

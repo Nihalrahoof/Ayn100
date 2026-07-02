@@ -127,3 +127,54 @@ if (slides.length > 1) {
   showSlide(0);
   setInterval(() => { currentSlide = (currentSlide + 1) % slides.length; showSlide(currentSlide); }, 5000);
 }
+
+// ─── INTERACTIVE HERO DIVISION SWITCHER ───
+(function () {
+  const heroBtns = document.querySelectorAll('.hero-div-btn[data-division]');
+  const heroBgLayers = document.querySelectorAll('.hero-bg-layer[data-division]');
+  const heroTextBlocks = document.querySelectorAll('.hero-text-block[data-division]');
+
+  if (!heroBtns.length) return;
+
+  function switchDivision(divisionName) {
+    // Switch background layers
+    heroBgLayers.forEach(layer => {
+      if (layer.dataset.division === divisionName) {
+        layer.classList.add('active');
+      } else {
+        layer.classList.remove('active');
+      }
+    });
+    // Switch text blocks
+    heroTextBlocks.forEach(block => {
+      if (block.dataset.division === divisionName) {
+        block.classList.add('active');
+      } else {
+        block.classList.remove('active');
+      }
+    });
+    // Switch button active state
+    heroBtns.forEach(btn => {
+      if (btn.dataset.division === divisionName) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  heroBtns.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      switchDivision(btn.dataset.division);
+    });
+  });
+
+  // Revert to default when mouse leaves the entire nav area
+  const heroNav = document.querySelector('.hero-division-nav');
+  if (heroNav) {
+    heroNav.addEventListener('mouseleave', () => {
+      switchDivision('default');
+      heroBtns.forEach(btn => btn.classList.remove('active'));
+    });
+  }
+})();

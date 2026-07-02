@@ -4,52 +4,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AYN100 Furniture Trading LLC | Premium Bespoke Furniture UAE</title>
+  <title>AYN Group | Empowering Spaces. Engineering Precision.</title>
   <meta name="description"
-    content="AYN100 Furniture Trading LLC — Leading provider of customized premium furniture, curtains, blinds, decorative metal and re-upholstery services across UAE & India.">
+    content="AYN is a premier manufacturing and trading collective dedicated to transforming environments through three specialized divisions: AYN100 Furniture, AYN Fabrics, and AM Fortis Engg.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="home">
   <div class="preloader">
-    <div class="preloader-logo">AYN100</div>
+    <div class="preloader-logo">AYN</div>
   </div>
 
   <!-- Navigation -->
   <nav class="nav" id="mainNav">
-    <a href="index.html" class="nav-logo">AYN<span>100</span></a>
+    <a href="index.html" class="nav-logo">AYN</a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">Divisions <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px;"></i></a>
+        <div class="dropdown-content">
+          <a href="ayn100.html">AYN100 Furniture</a>
+          <a href="fabrics.html">AYN Fabrics</a>
+          <a href="fortis.html">AM Fortis Engg</a>
+        </div>
+      </div>
       <a href="about.html">Our Story</a>
-      <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
-      <a href="contact.html">Connect</a>
+      <a href="contact.html" class="nav-cta">Connect</a>
     </div>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a><a href="about.html">Our Story</a><a href="services.html">Services</a><a
-      href="projects.html">Projects</a><a href="contact.html">Connect</a>
+    <a href="index.html">Home</a>
+    <a href="ayn100.html">AYN100 Furniture</a>
+    <a href="fabrics.html">AYN Fabrics</a>
+    <a href="fortis.html">AM Fortis Engg</a>
+    <a href="about.html">Our Story</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Connect</a>
   </div>
 
-  <!-- Hero Section — Full Parallax -->
-  <section class="hero full-parallax" id="hero">
-    <div class="parallax-bg" style="background-image: url('images/heroq.jpg');">
-    </div>
-    <div class="hero-overlay-dark"></div>
-    <div class="container"
-      style="position: relative; z-index: 2; height: 100vh; display: flex; align-items: center; justify-content: flex-end;">
-      <div class="hero-content" style="text-align: right; max-width: 600px;">
-        <p class="hero-tag">Furniture Trading LLC</p>
-        <h1 class="hero-title">AYN 100<br>AND <em>MORE</em></h1>
-        <p class="hero-subtitle" style="margin: 0 0 0 auto;">Premium quality customized furniture for hotels,
-          restaurants,
-          commercial and residential projects across UAE & India</p>
-        <a href="about.html" class="hero-btn"><span>Dive Into Our Story</span></a>
+  <!-- Hero Section — Interactive Division Selector -->
+  <section class="hero-interactive" id="hero">
+    <!-- Background layers — one per division, crossfade on hover -->
+    <div class="hero-bg-layer active" data-division="default" style="background-image: url('images/heroq.jpg');"></div>
+    <div class="hero-bg-layer" data-division="ayn100" style="background-image: url('images/beigebg.jpg');"></div>
+    <div class="hero-bg-layer" data-division="fabrics" style="background-image: url('images/bg2.jpg');"></div>
+    <div class="hero-bg-layer" data-division="fortis" style="background-image: url('images/project-fortis.png');"></div>
+    <div class="hero-interactive-overlay"></div>
+
+    <div class="hero-interactive-inner">
+      <!-- Left: Dynamic headline text -->
+      <div class="hero-text-side">
+        <p class="hero-tag" style="opacity:0; animation: fadeUp 0.8s 0.3s forwards;">Manufacturing & Trading Collective</p>
+
+        <!-- Default state text -->
+        <div class="hero-text-block active" data-division="default">
+          <h1 class="hero-mega-title">EMPOWERING<br>SPACES.<br><em>PRECISION.</em></h1>
+          <p class="hero-interactive-sub">Welcome to the future of functional design. AYN is a premier manufacturing and trading collective dedicated to transforming environments across three dedicated divisions.</p>
+        </div>
+
+        <!-- AYN100 text -->
+        <div class="hero-text-block" data-division="ayn100">
+          <h1 class="hero-mega-title">BESPOKE<br>FURNITURE<br><em>CREATOR</em></h1>
+          <p class="hero-interactive-sub">Fully customized, high-end luxury furniture tailored to the exact aesthetic and functional requirements of residential, commercial, and hospitality projects.</p>
+        </div>
+
+        <!-- AYN Fabrics text -->
+        <div class="hero-text-block" data-division="fabrics">
+          <h1 class="hero-mega-title">PREMIUM<br>TEXTILES<br><em>CURATOR</em></h1>
+          <p class="hero-interactive-sub">An elite range of luxury textiles, custom curtains, and soft furnishings blending tactile elegance with technical performance for inspired interiors.</p>
+        </div>
+
+        <!-- AM Fortis text -->
+        <div class="hero-text-block" data-division="fortis">
+          <h1 class="hero-mega-title">PRECISION<br>LAB<br><em>ENGINEER</em></h1>
+          <p class="hero-interactive-sub">Heavy-duty, sterile-compliant laboratory and medical furniture. Advanced ergonomics, chemical-resistant surfaces, and scientific precision.</p>
+        </div>
+      </div>
+
+      <!-- Right: Division selector buttons -->
+      <div class="hero-division-nav">
+        <a href="ayn100.html" class="hero-div-btn" data-division="ayn100">
+          <span class="hero-div-btn-label">AYN100</span>
+          <span class="hero-div-btn-sub">Furniture</span>
+        </a>
+        <a href="fabrics.html" class="hero-div-btn" data-division="fabrics">
+          <span class="hero-div-btn-label">AYN</span>
+          <span class="hero-div-btn-sub">Fabrics</span>
+        </a>
+        <a href="fortis.html" class="hero-div-btn" data-division="fortis">
+          <span class="hero-div-btn-label">AM FORTIS</span>
+          <span class="hero-div-btn-sub">Engineering</span>
+        </a>
       </div>
     </div>
-    <div class="hero-scroll light">
+
+    <div class="hero-scroll light" style="z-index: 5;">
       <span>Scroll</span>
       <div class="scroll-line"></div>
     </div>
@@ -60,18 +112,14 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image reveal-left">
-          <img src="images/ss.jpg" alt="AYN100 Craftsmanship">
+          <img src="images/ss.jpg" alt="AYN Craftsmanship">
         </div>
         <div class="about-text reveal-right">
-          <p class="section-tag">More Than A Decade</p>
-          <h2 class="section-title">From Dubai<br>To You</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">AYN100 Furniture Trading LLC is one of the leading furniture companies in UAE &
-            India. We provide the best quality products and services, growing our offerings daily so that our customers
-            have the finest experience.</p>
-          <p class="section-subtitle" style="margin-top: 15px;">Select and procure any furniture finish products under a
-            single entity. Receive constant and dependable deliveries all across UAE — creating an experience that is
-            pleasurable while delivering peace of mind every time.</p>
+          <p class="section-tag">About The Group</p>
+          <h2 class="section-title" style="text-align: left;">Engineered<br>To Inspire</h2>
+          <div class="section-divider" style="margin: 20px 0;"></div>
+          <p class="section-subtitle" style="text-align: left; max-width: 100%;">AYN is a multidisciplinary design, fabric, and engineering collective. Through our three specialized subsidiaries—AYN100, AYN FABRICS, and AM FORTIS ENGG—we provide comprehensive, turnkey solutions ranging from custom interior styling to clinical laboratory engineering. Driven by innovation and backed by parental brand equity, we engineer spaces that inspire.</p>
+          <p class="section-subtitle" style="text-align: left; max-width: 100%; margin-top: 15px;">Whether it is luxury customized residential spaces, soft furnishings curation, or sterile clinical labs, our collective brings a decade of regional delivery expertise, absolute precision, and dependability to every space we build.</p>
           <div class="about-stats">
             <div>
               <div class="stat-number" data-count="15" data-suffix="+">0</div>
@@ -93,57 +141,69 @@
 
   <!-- Full Width Image -->
   <div class="full-image-section">
-    <img src="images/2sw.jpg" alt="AYN100 Hotel Project">
+    <img src="images/2sw.jpg" alt="AYN Luxury Project">
   </div>
 
-  <!-- Services Section -->
-  <section class="section" id="services" style="background: var(--bg-alt);">
+  <!-- Divisions Section -->
+  <section class="section" id="divisions" style="background: var(--bg-alt);">
     <div class="container">
       <div class="reveal">
-        <p class="section-tag">What We Offer</p>
-        <h2 class="section-title">Our Services</h2>
+        <p class="section-tag">Our Capabilities</p>
+        <h2 class="section-title">The Three Brand Divisions</h2>
         <div class="section-divider"></div>
+        <p class="section-subtitle" style="margin-bottom: 40px;">Select a division to explore our specialized solutions:</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-couch"></i></div>
-          <h3>Customized Furniture</h3>
-          <p>Bespoke pieces crafted to your exact specifications, merging imagination with expert craftsmanship.</p>
+      
+      <div class="divisions-grid">
+        <!-- Division 1 -->
+        <div class="division-card reveal" style="background-image: url('images/hero-main.png');">
+          <div class="division-card-content">
+            <span class="division-badge">Division 01</span>
+            <h3>AYN100 Furniture</h3>
+            <p class="division-headline">Bespoke Craftsmanship for Distinctive Spaces</p>
+            <p class="division-desc">AYN100 is where your vision meets world-class artisanal execution. We specialize in high-end, fully customized furniture tailored to the exact aesthetic and functional requirements of luxury residential, commercial, and hospitality projects.</p>
+            <ul class="division-offerings">
+              <li><i class="fas fa-check"></i> Custom Luxury Residential Furniture</li>
+              <li><i class="fas fa-check"></i> Bespoke Office & Executive Commercial Fit-outs</li>
+              <li><i class="fas fa-check"></i> Tailored Hospitality & Retail Concept Furniture</li>
+              <li><i class="fas fa-check"></i> Turnkey Space Planning & Material Selection</li>
+            </ul>
+            <a href="ayn100.html" class="division-link">Explore Division <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-chair"></i></div>
-          <h3>Ready Made Furniture</h3>
-          <p>Curated collection of premium ready-made pieces that bring instant elegance to any space.</p>
+        
+        <!-- Division 2 -->
+        <div class="division-card reveal" style="background-image: url('images/about-craft.png');">
+          <div class="division-card-content">
+            <span class="division-badge">Division 02</span>
+            <h3>AYN Fabrics</h3>
+            <p class="division-headline">Premium Textiles & Window Dressings for Inspired Interiors</p>
+            <p class="division-desc">AYN FABRICS curates and manufactures an elite range of luxury textiles, custom curtains, and soft furnishings. Designed to complement high-end interiors, our collections blend tactile elegance with technical performance.</p>
+            <ul class="division-offerings">
+              <li><i class="fas fa-check"></i> Custom Curtains, Drapery & Automated Treatments</li>
+              <li><i class="fas fa-check"></i> Premium Upholstery Fabrics</li>
+              <li><i class="fas fa-check"></i> Flame-Retardant & Performance Textiles</li>
+              <li><i class="fas fa-check"></i> Bespoke Cushions & Soft Accessories</li>
+            </ul>
+            <a href="fabrics.html" class="division-link">Explore Division <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-wind"></i></div>
-          <h3>Curtains & Blinds</h3>
-          <p>Premium window treatments in luxurious fabrics, perfectly tailored for your interiors.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-scroll"></i></div>
-          <h3>Premium Fabrics</h3>
-          <p>An extensive library of the finest fabrics sourced from around the world.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-gem"></i></div>
-          <h3>Decorative Metal</h3>
-          <p>Punched, expanded, woven, or finished metals with unique patterns and textures.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-tools"></i></div>
-          <h3>Re-Upholstery</h3>
-          <p>Breathe new life into beloved furniture with expert fabric restoration.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-tasks"></i></div>
-          <h3>Project Management</h3>
-          <p>End-to-end project coordination ensuring timely delivery and quality control.</p>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
-          <h3>Furniture Design</h3>
-          <p>Innovative design that transforms creative concepts into functional masterpieces.</p>
+
+        <!-- Division 3 -->
+        <div class="division-card reveal" style="background-image: url('images/project-fortis.png');">
+          <div class="division-card-content">
+            <span class="division-badge">Division 03</span>
+            <h3>AM Fortis Engg</h3>
+            <p class="division-headline">High-Precision Engineering for Laboratory Environments</p>
+            <p class="division-desc">AM FORTIS ENGG is a specialized engineering division dedicated to designing and manufacturing heavy-duty, high-performance medical and laboratory furniture. Built on advanced ergonomics and sterile configurations.</p>
+            <ul class="division-offerings">
+              <li><i class="fas fa-check"></i> Clinical-Grade Laboratory Benches & Workstations</li>
+              <li><i class="fas fa-check"></i> Chemical-Resistant, Heavy-Duty Modular Cabinetry</li>
+              <li><i class="fas fa-check"></i> Ergonomic Medical & Healthcare Seating</li>
+              <li><i class="fas fa-check"></i> Customized Stainless Steel Sterile Furniture</li>
+            </ul>
+            <a href="fortis.html" class="division-link">Explore Division <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -152,12 +212,8 @@
   <!-- Marquee -->
   <div class="marquee-section">
     <div class="marquee-track">
-      <span class="marquee-item">Customized Furniture <span>✦</span> Ready Made <span>✦</span> Curtains & Blinds
-        <span>✦</span> Fabrics <span>✦</span> Decorative Metal <span>✦</span> Re-Upholstery <span>✦</span> Project
-        Management <span>✦</span> Furniture Design <span>✦</span></span>
-      <span class="marquee-item">Customized Furniture <span>✦</span> Ready Made <span>✦</span> Curtains & Blinds
-        <span>✦</span> Fabrics <span>✦</span> Decorative Metal <span>✦</span> Re-Upholstery <span>✦</span> Project
-        Management <span>✦</span> Furniture Design <span>✦</span></span>
+      <span class="marquee-item">AYN100 Furniture <span>✦</span> AYN Fabrics <span>✦</span> AM Fortis Engg <span>✦</span> Bespoke Design <span>✦</span> Premium Textiles <span>✦</span> Sterile Laboratory Engineering <span>✦</span></span>
+      <span class="marquee-item">AYN100 Furniture <span>✦</span> AYN Fabrics <span>✦</span> AM Fortis Engg <span>✦</span> Bespoke Design <span>✦</span> Premium Textiles <span>✦</span> Sterile Laboratory Engineering <span>✦</span></span>
     </div>
   </div>
 
@@ -192,10 +248,10 @@
           </div>
         </div>
         <div class="project-card reveal">
-          <img src="images/about-craft.png" alt="Boutique Hotel">
+          <img src="images/project-fortis.png" alt="Clinical Lab Project">
           <div class="project-overlay">
-            <h3>Boutique Hotel Suites</h3>
-            <p>Hotel &bull; Sharjah</p>
+            <h3>Diagnostic Research Facility</h3>
+            <p>Laboratory &bull; Dubai</p>
           </div>
         </div>
       </div>
@@ -209,10 +265,9 @@
   <section class="section testimonial-section">
     <div class="container">
       <div class="testimonial-content reveal">
-        <p class="section-tag">Personalized Experience</p>
-        <p class="testimonial-quote">"It's the prestigious AYN100 assurance that you can merge your imagination and
-          expectations about your dream furniture with our expertise, and we bring you a smile."</p>
-        <p class="testimonial-author">— The AYN100 Promise</p>
+        <p class="section-tag">Personalized Assurance</p>
+        <p class="testimonial-quote">"It's the prestigious AYN assurance that you can merge your imagination and expectations about your dream space with our expertise, and we bring you a smile."</p>
+        <p class="testimonial-author">— The AYN Promise</p>
       </div>
     </div>
   </section>
@@ -224,8 +279,7 @@
         <p class="section-tag">Start Your Journey</p>
         <h2 class="section-title">Ready to Transform Your Space?</h2>
         <div class="section-divider" style="margin: 20px auto;"></div>
-        <p class="section-subtitle">Let us bring your vision to life with our expertise in premium furniture solutions
-        </p>
+        <p class="section-subtitle">Let us bring your vision to life with our expertise across our three specialized divisions</p>
         <div>
           <a href="contact.html" class="hero-btn" style="opacity:1;animation:none;"><span>Get In Touch</span></a>
         </div>
@@ -238,45 +292,47 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="nav-logo">AYN<span>100</span></a>
-          <p>Leading provider of customized premium furniture, curtains, blinds, decorative metal and re-upholstery
-            services across UAE & India.</p>
+          <a href="index.html" class="nav-logo">AYN</a>
+          <p>
+            AYN is a multidisciplinary design, fabric, and engineering collective. Through our three specialized subsidiaries—AYN100, AYN FABRICS, and AM FORTIS ENGG—we provide comprehensive, turnkey solutions ranging from custom interior styling to clinical laboratory engineering. Driven by innovation and backed by parental brand equity, we engineer spaces that inspire.
+          </p>
         </div>
         <div>
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="ayn100.html">AYN100 Furniture</a></li>
+            <li><a href="fabrics.html">AYN Fabrics</a></li>
+            <li><a href="fortis.html">AM Fortis Engg</a></li>
             <li><a href="about.html">Our Story</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Divisions</h4>
           <ul>
-            <li><a href="services.html">Customized Furniture</a></li>
-            <li><a href="services.html">Curtains & Blinds</a></li>
-            <li><a href="services.html">Decorative Metal</a></li>
-            <li><a href="services.html">Re-Upholstery</a></li>
-            <li><a href="services.html">Furniture Design</a></li>
+            <li><a href="ayn100.html">AYN100 Furniture</a></li>
+            <li><a href="fabrics.html">AYN Fabrics</a></li>
+            <li><a href="fortis.html">AM Fortis Engg</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+97557856132">+9755 785 6132</a></li>
-            <li><a href="mailto:sales@ayn100.com">sales@ayn100.com</a></li>
+            <li><a href="tel:+971589034546">+971 58 903 4546</a></li>
+            <li><a href="tel:+971527737468">+971 52 773 7468</a></li>
+            <li><a href="mailto:Sales@anmgrp.com">Sales@anmgrp.com</a></li>
             <li>Sadaa Albihaar Business Center</li>
             <li>2nd Floor, Office 56</li>
-            <li>Sheikh Zayed Road, Dubai</li>
+            <li>City Tower 2, Sheikh Zayed Road, Dubai</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 AYN100 Furniture Trading LLC. All rights reserved.</p>
+        <p>&copy; 2026 AYN Group. All rights reserved.</p>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/ayn100-furniture" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/anm-furniture" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
