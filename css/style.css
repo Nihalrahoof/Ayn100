@@ -81,7 +81,7 @@ ul { list-style: none; }
 }
 .nav-logo:hover .nav-logo-img {
   transform: scale(1.06);
-  filter: drop-shadow(0 0 12px rgba(24, 188, 169, 0.6));
+  filter: drop-shadow(0 0 14px rgba(223, 183, 108, 0.65));
 }
 .nav-links { display: flex; gap: 40px; align-items: center; height: 100%; width: 100%; justify-content: center; }
 .nav-links a {
@@ -866,17 +866,9 @@ body.division-fortis {
 .hero-div-btn.active .hero-div-logo-wrap {
   transform: translateY(-8px);
 }
-.hero-div-btn[data-division="ayn100"]:hover .hero-div-full-logo,
-.hero-div-btn[data-division="ayn100"].active .hero-div-full-logo {
-  filter: drop-shadow(0 0 14px rgba(24, 188, 169, 0.65));
-}
-.hero-div-btn[data-division="fabrics"]:hover .hero-div-full-logo,
-.hero-div-btn[data-division="fabrics"].active .hero-div-full-logo {
-  filter: drop-shadow(0 0 14px rgba(10, 203, 230, 0.65));
-}
-.hero-div-btn[data-division="fortis"]:hover .hero-div-full-logo,
-.hero-div-btn[data-division="fortis"].active .hero-div-full-logo {
-  filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.65));
+.hero-div-btn:hover .hero-div-full-logo,
+.hero-div-btn.active .hero-div-full-logo {
+  filter: drop-shadow(0 0 16px rgba(223, 183, 108, 0.6));
 }
 
 /* Small subtitle text: hidden by default, reveals only on hover */

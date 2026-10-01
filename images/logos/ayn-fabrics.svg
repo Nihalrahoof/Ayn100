@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="100%" height="100%">
   <defs>
-    <linearGradient id="fabricsGrad" x1="0" y1="0" x2="520" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1cb982"/>
-      <stop offset="35%" stop-color="#16bca2"/>
-      <stop offset="70%" stop-color="#0acbe6"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
+    <linearGradient id="fabricsGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b88a44"/>
+      <stop offset="25%" stop-color="#dfb76c"/>
+      <stop offset="55%" stop-color="#fcedc7"/>
+      <stop offset="80%" stop-color="#dfb76c"/>
+      <stop offset="100%" stop-color="#a67c3b"/>
     </linearGradient>
   </defs>
   <!-- AYN Mark Group -->
-  <g fill="none" stroke="url(#fabricsGrad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="url(#fabricsGoldGrad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
     <!-- LETTER A -->
     <path d="M 100,185 L 149,67 L 198,185" />
     <path d="M 125,183 L 125,168 L 173,168 L 173,183" />
@@ -27,5 +28,5 @@
   </g>
 
   <!-- Subtitle: FABRICS -->
-  <text x="279" y="238" font-family="'Montserrat', 'Outfit', 'Inter', -apple-system, sans-serif" font-size="24" font-weight="500" text-anchor="middle" fill="url(#fabricsGrad)" letter-spacing="16">FABRICS</text>
+  <text x="279" y="238" font-family="'Montserrat', 'Outfit', 'Inter', -apple-system, sans-serif" font-size="24" font-weight="500" text-anchor="middle" fill="url(#fabricsGoldGrad)" letter-spacing="16">FABRICS</text>
 </svg>
