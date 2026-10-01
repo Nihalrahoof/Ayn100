@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="90 55 380 145" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fabricsMarkGrad" x1="90" y1="120" x2="470" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1cb982"/>
+      <stop offset="35%" stop-color="#16bca2"/>
+      <stop offset="70%" stop-color="#0acbe6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#fabricsMarkGrad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 100,185 L 149,67 L 198,185" />
+    <path d="M 125,183 L 125,168 L 173,168 L 173,183" />
+    <path d="M 148,122 C 156,122 163,128 163,136 C 163,144 156,146 140,146" />
+    <path d="M 238,67 L 273,124 L 273,185" />
+    <path d="M 334,67 L 299,124 L 299,185" />
+    <path d="M 264,67 L 286,108 L 308,67" />
+    <line x1="370" y1="67" x2="370" y2="185" />
+    <path d="M 392,67 L 436,131 L 436,67" />
+    <path d="M 392,185 L 392,121 L 436,185" />
+    <line x1="458" y1="67" x2="458" y2="185" />
+  </g>
+</svg>
