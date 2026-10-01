@@ -167,6 +167,9 @@ if (slides.length > 1) {
     btn.addEventListener('mouseenter', () => {
       switchDivision(btn.dataset.division);
     });
+    btn.addEventListener('touchstart', () => {
+      switchDivision(btn.dataset.division);
+    }, { passive: true });
   });
 
   // Revert to default when mouse leaves the entire nav area
