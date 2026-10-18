@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+/* Google Fonts loaded via preconnect <link> in HTML for zero render-blocking waterfall */
 
 :root {
   --bg: #ECE7CA;
@@ -32,7 +32,8 @@ ul { list-style: none; }
 .preloader {
   position: fixed; inset: 0; z-index: 10000; background: var(--bg);
   display: flex; align-items: center; justify-content: center;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  will-change: opacity, visibility;
 }
 .preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 .preloader-logo {
